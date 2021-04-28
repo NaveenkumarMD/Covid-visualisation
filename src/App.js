@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Impact from './Impact'
+import Likelihood from './Chart'
+import Relevance from './Relevance'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display:'flex',alignItems:'center',flexWrap:'wrap',justifyContent:'center',padding:50}}>
+      <Likelihood/>
+      <Relevance/>
+      <Impact/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
