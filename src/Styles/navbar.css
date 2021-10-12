@@ -1,0 +1,13 @@
+.navbar{
+    height:60px;
+    background-color:rgba(7,207,164);
+    border-bottom: 2px solid rgb(7, 207, 164);
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding-left:30px
+}
+.navbar-title{
+    font-size: 25px;
+    font-weight: 500;    
+}

@@ -1,16 +1,17 @@
-import React from 'react'
-import Impact from './Impact'
-import Likelihood from './Chart'
-import Relevance from './Relevance'
+import React, { useState } from 'react'
+import Charts from './Components/charts'
+
+import Form from './Components/Form'
+import Navbar from './Components/Navbar'
 
 function App() {
-  return (
-    <div style={{display:'flex',alignItems:'center',flexWrap:'wrap',justifyContent:'center',padding:50}}>
-      <Likelihood/>
-      <Relevance/>
-      <Impact/>
-    </div>
-  )
+    const [country,setcountry]=useState({})
+    console.log(country)
+    return (
+        <div>
+            <Charts />
+        </div>
+    )
 }
 
 export default App
